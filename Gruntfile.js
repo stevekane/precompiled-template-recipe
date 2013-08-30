@@ -13,9 +13,8 @@ module.exports = function (grunt) {
           templateBasePath: "path/to/directory/" ,
           templateFileExtensions: /\.(hbs|hjs|handlebars)/
         },
-        files: {
-          "<%= outputDir %>/<%= compiled %>": "<%= templateDir %>/**/*.{hbs,hjs,handlebars}"
-        }
+        src: "<%= templateDir %>/**/*.{hbs,hjs,handlebars}",
+        dest: "<%= outputDir %>/<%= compiled %>"
       }    
     },
 
