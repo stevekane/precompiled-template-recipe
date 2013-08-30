@@ -42,6 +42,8 @@ your package.json file under ```devDependencies```
 4. Create ```Gruntfile.js``` in your project root.  This file contains all the configuration
 for your grunt tasks.  
 5. Open the Gruntfile and paste in the following code:
+
+
 ```js
 'use strict'
 
