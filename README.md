@@ -10,7 +10,8 @@ When your Ember application uses one of these templates, it will need to compile
 syntax into a javascript function.  This takes a little bit of time and is a needless task for your
 client to be performing.  Furthermore, as your application grows, having tons of these templates in
 your HTML document will become unwieldy and ugly.
-< /br>
+
+
 Thankfully, this compilation step can be done ahead of time.  Ember.js expects that your templates
 will be found in a hash object called Ember.TEMPLATES.  You can prebuild this hash on your server
 and send it down the wire with your application.
@@ -90,21 +91,25 @@ module.exports = function (grunt) {
 };
 ```
 Gruntfiles are easy to read once you know what you are looking at.
-< /br>
+
+
 The top declares three 
 mustache.js-style variables that may be used to store directory names, filenames, etc and can
 be used throughout your Gruntfile.  This is huge, as it allows you to easily change project structure
 without hardcoding your paths throughout your config file.
-< /br>
+
+
 The second two objects are configuration objects for the ```emberTemplates``` and ```watch``` tasks.
 details on the options and configuration of these tasks is found in their respective github
 repositories.  Grunt tasks typically have easily read README.md files that explain the options 
 and configurations for that package.
-< /br>
+
+
 The third section is where we register our tasks.  Grunt provides a convenient function 
 ```loadNpmTasks``` to load task definitions straight from the ```node_modules``` directory.
 We also register two CLI tasks of our own, ```default``` and ```precompile-watch```.
-< /br>
+
+
 Typing ```grunt``` at the terminal will run our default task which will compile our templates and
 create a file in our specified output folder.  Typing ```grunt precompile-watch``` perform
 the same compilation, but will also start a file watching process which monitors our template
@@ -119,7 +124,8 @@ Precompiling your templates is a must for Ember.js projects that grow beyond a t
 The steps outlined here provide a convenient, configurable, and extensible way to perform this
 important task and allow you to focus on developing your application.  The repository that this
 tutorial is based on is found at http://www.github.com/stevekane/precompiled-template-recipe.
-< /br>
+
+
 As a bonus, if you are interested in using ```Emblem.js``` which has a HAML-like syntax to 
 build your templates, there is a grunt task for precompiling emblem.js templates called 
 ```grunt-emblem```.  The steps needed to configure this task are similar to the ones shown
