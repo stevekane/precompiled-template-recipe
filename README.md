@@ -117,11 +117,14 @@ Typing ```grunt``` at the terminal will run our default task which will compile 
 create a file in our specified output folder.  Typing ```grunt precompile-watch``` perform
 the same compilation, but will also start a file watching process which monitors our template
 directory for changes and re-runs the compilation task.
+
+
 6. Now that you know what you are looking at, configure your Gruntfile by changing the paths 
 at the top to match your project's layout.  
 7. Test the precompilation with ```grunt``` and then test that your file watching task is working
 by typing ```grunt precompile-watch``` and then saving one of your template files.
 8. Fin.
+
 ##Discussion
 Precompiling your templates is a must for Ember.js projects that grow beyond a trivial size.
 The steps outlined here provide a convenient, configurable, and extensible way to perform this
