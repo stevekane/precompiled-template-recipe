@@ -1,0 +1,27 @@
+{
+  "name": "precompiled-template-recipe",
+  "version": "0.0.0",
+  "description": "This is a cookbook recipe for precompiling templates using grunt-ember-templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stevekane/precompiled-template-recipe.git"
+  },
+  "keywords": [
+    "emberjs",
+    "handlebars",
+    "precompile",
+    "grunt"
+  ],
+  "author": "Steve Kane",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt-ember-templates": "~0.4.12",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1"
+  }
+}
