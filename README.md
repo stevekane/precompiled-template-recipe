@@ -31,6 +31,8 @@ steps can probably be skipped or read through quickly.
 
 ###Process
 All steps assume you are in your project's root.
+
+
 1. Install Node.js (which now ships with NPM).
 2. Type ```npm init```.  This will ask you for a few quick details and then will output a 
 package.json file.  This file contains a list of all your dependencies (and version number) and some
