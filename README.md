@@ -32,7 +32,7 @@ steps can probably be skipped or read through quickly.
 ###Process
 All steps assume you are in your project's root.
 
-
+####Setup
 1. Install Node.js (which now ships with NPM).
 2. Type ```npm init```.  This will ask you for a few quick details and then will output a 
 package.json file.  This file contains a list of all your dependencies (and version number) and some
@@ -119,11 +119,12 @@ the same compilation, but will also start a file watching process which monitors
 directory for changes and re-runs the compilation task.
 
 
-6. Now that you know what you are looking at, configure your Gruntfile by changing the paths 
+####Configuration and Testing
+1. Now that you know what you are looking at, configure your Gruntfile by changing the paths 
 at the top to match your project's layout.  
-7. Test the precompilation with ```grunt``` and then test that your file watching task is working
+2. Test the precompilation with ```grunt``` and then test that your file watching task is working
 by typing ```grunt precompile-watch``` and then saving one of your template files.
-8. Fin.
+3. Fin.
 
 ##Discussion
 Precompiling your templates is a must for Ember.js projects that grow beyond a trivial size.
